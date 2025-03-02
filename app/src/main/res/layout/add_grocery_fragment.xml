@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Grocery Name Input -->
+        <EditText
+            android:id="@+id/etGroceryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Grocery Name"
+            android:minHeight="48dp"/>
+
+        <!-- Quantity and Unit (Inline) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etGroceryQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Enter Quantity"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:entries="@array/unit_options"/>
+        </LinearLayout>
+
+        <!-- Store Name Input -->
+        <EditText
+            android:id="@+id/etStoreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Store Name (e.g., Ramdai Ko Grocery Pasal)"
+            android:minHeight="48dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Category Dropdown -->
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/grocery_categories"/>
+
+        <!-- Add Grocery Button -->
+        <Button
+            android:id="@+id/btnSaveGrocery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Grocery"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

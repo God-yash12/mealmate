@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_meal_planner"
+        android:icon="@drawable/ic_meal"
+        android:title="@string/meals"
+        />
+
+    <item
+        android:id="@+id/nav_grocery_list"
+        android:icon="@drawable/ic_grocery"
+        android:title="@string/groceries"
+        />
+
+    <item
+        android:id="@+id/nav_recipes"
+        android:icon="@drawable/ic_recipes"
+        android:title="@string/recipes"
+        />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"
+       />
+
+</menu>

@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">meal mate</string>
+<!--    Welcome activity-->
+    <string name="appName">Meal Mate</string>
+    <string name="welcome">Welcome,</string>
+    <string name="welcome_subtitle">Effortless meal planning for a healthier you</string>
+
+<!--    Registration -->
+    <string name="app_logo">Meal mate Logo</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+<!--    Button-->
+    <string name="btnLogout">Logout</string>
+    <string name="btnLogin">Login Now</string>
+    <string name="registerBtn">Signup Now</string>
+
+<!--    have not have account-->
+    <string name="do_not_have_an_account">Don\'t Have an Account? Register Now.</string>
+    <string name="have_an_account">Already Have an Account? Login Now.</string>
+    <string name="user_profile">User profile</string>
+    <string name="meals">Meals</string>
+    <string name="groceries">Groceries</string>
+    <string name="recipes">Recipes</string>
+    <string name="settings">Settings</string>
+
+<!--    Home activity -->
+    <string name="add">Add</string>
+    <string name="add_new_meal">Add New Meal</string>
+    <string name="meal_image">meal_image</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="preparation_steps">Preparation Steps</string>
+    <string name="save_meal">Save Meal</string>
+    <string name="ingredients_comma_separated">Ingredients (comma-separated)</string>
+    <string name="preparation_steps_comma_separated">Preparation Steps (comma-separated)</string>
+    <string name="day_of_the_week">Day of the Week</string>
+    <string name="save_meal_btn">Save Meal</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="image_path_optional">Image Path (optional)</string>
+
+    <string-array name="days_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+<!--    meal activity-->
+    <string name="add_meal">Add new Meal</string>
+    <string name="no_meal_item_added">No meal item added</string>
+    <string name="select_meal_type">Select Meal Type</string>
+    <string name="select_date">Select Date</string>
+    <string name="pick_a_date">Pick a date</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="preparation_time_minutes">Preparation Time (minutes)</string>
+    <string name="cook_time_minutes">Cook Time (minutes)</string>
+    <string name="add_ingredient">+ Add Ingredient</string>
+    <string name="upload_meal_image">Upload Meal Image</string>
+    <string name="representative_meal_image">Representative_meal_image</string>
+    <string name="select_image">Select Image</string>
+    <string name="imageview">imageView</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="add_new_recipe">add_new_recipe</string>
+    <string name="no_Recipe_added">no_recipe_added</string>
+    <string name="enter_recipe_name">Enter Recipe Name</string>
+    <string name="enter_ingredients">Enter Ingredients</string>
+    <string name="enter_instructions">Enter Instructions</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="no_grocery_added">no_grocery_added</string>
+    <string name="add_new_grocery">add_new_grocery</string>
+    <string name="store_walmart">Store: Walmart</string>
+    <string name="_2_5_kg">2.5 kg</string>
+    <string name="grocery_name">Grocery Name</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="delete_meal">Delete meal</string>
+    <string name="edit_meal">Edit meal</string>
+    <string name="share_grocery">Share grocery</string>
+    <string name="purchased">Purchased</string>
+
+    <string-array name="meal_types">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snacks</item>
+    </string-array>
+
+
+<!--    grocery item -->
+    <string-array name="grocery_categories">
+        <item>Deli</item>
+        <item>Bakery/Breads</item>
+        <item>Meat</item>
+        <item>Fish</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Condiments</item>
+        <item>Diet</item>
+        <item>Dairy/Eggs</item>
+        <item>Frozen</item>
+        <item>Sweets</item>
+        <item>Chips</item>
+        <item>Drinks</item>
+        <item>Baby</item>
+        <item>Pets</item>
+        <item>Non-food</item>
+        <item>Other</item>
+    </string-array>
+
+<!--    grocery unit-->
+    <string-array name="unit_options">
+        <item>kg</item>
+        <item>gram</item>
+        <item>liter</item>
+        <item>ml</item>
+        <item>pcs</item>
+        <item>pack</item>
+        <item>dozen</item>
+    </string-array>
+
+</resources>

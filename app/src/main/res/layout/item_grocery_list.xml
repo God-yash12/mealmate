@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- RadioButton and Purchased Label Container -->
+        <FrameLayout
+            android:id="@+id/purchaseStatusContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Radio Button (visible by default) -->
+            <RadioButton
+                android:id="@+id/rbPurchased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Mark as purchased" />
+
+            <!-- Purchased Label (initially gone) -->
+            <TextView
+                android:id="@+id/tvPurchased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purchased"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp" />
+        </FrameLayout>
+
+        <!-- Name, Details, and Store Info in a Vertical Layout -->
+        <LinearLayout
+            android:id="@+id/groceryInfoContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/purchaseStatusContainer"
+            app:layout_constraintEnd_toStartOf="@id/actionsContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="12dp">
+
+            <!-- Grocery Name -->
+            <TextView
+                android:id="@+id/tvGroceryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grocery Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <!-- Grocery Details -->
+            <TextView
+                android:id="@+id/tvGroceryDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5 kg"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Store Name -->
+            <TextView
+                android:id="@+id/tvStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store: Walmart"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Container for Edit and Share buttons -->
+        <LinearLayout
+            android:id="@+id/actionsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Edit Button -->
+            <ImageButton
+                android:id="@+id/btnEditGrocery"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_edit"
+                android:contentDescription="Edit grocery"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Share Button -->
+            <ImageButton
+                android:id="@+id/btnShareGrocery"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_share"
+                android:contentDescription="Share grocery"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
